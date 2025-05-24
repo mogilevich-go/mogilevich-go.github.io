@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: background 0.5s ease;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.counter {
+    margin-top: 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#clickCount {
+    transition: transform 0.2s;
+    display: inline-block;
+}
+
+#clickCount:hover {
+    transform: scale(1.2);
+    color: #FF5733;
+}
+/* Предыдущие стили остаются */
+#musicToggle {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+#musicToggle:hover {
+    background: #45a049;
+}
+#particles-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Чтобы частицы были под основным контентом */
+    pointer-events: none; /* Клики будут проходить сквозь canvas */
+}
+#bubbles-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
